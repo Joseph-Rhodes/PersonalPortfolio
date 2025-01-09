@@ -29,36 +29,36 @@ const ContactSection = () => {
   return (
     <div
       style={{
-        backgroundColor: "#f9f9f9",
-        padding: "2rem",
-        fontFamily: "Arial, sans-serif",
+        backgroundColor: 'black',
+        padding: '2rem',
         color: "#333",
       }}
     >
       <h1
         style={{
           fontWeight: "bold",
-          color: "#111",
           textAlign: "center",
           marginBottom: "1rem",
+          color:"white",
+          fontFamily:"Courier New"
         }}
       >
         Contact Me
       </h1>
-      <p style={{ textAlign: "center", fontSize: "1.2rem" }}>
-        <span style={{ fontWeight: "bold" }}>Email:</span>{" "}
+      <p style={{ textAlign: "center", fontSize: "1rem", color:'white', fontFamily:'monospace' }}>
+        <span style={{ fontWeight: "bold"}}>Email:</span>{" "}
         <a
           href="mailto:joerhodesv2025@gmail.com"
-          style={{ color: "#007bff", textDecoration: "none" }}
+          style={{ color: "#99f", textDecoration: "none" }}
         >
           joerhodesv2025@gmail.com
         </a>
       </p>
-      <p style={{ textAlign: "center", fontSize: "1.2rem", marginBottom: "1rem" }}>
+      <p style={{ textAlign: "center", fontSize: "1rem", marginBottom: "1rem", color:'white', fontFamily:"monspace" }}>
         <span style={{ fontWeight: "bold" }}>Phone:</span>{" "}
         <a
           href="tel:(310)863-9920"
-          style={{ color: "#007bff", textDecoration: "none" }}
+          style={{ color: "#99f", textDecoration: "none" }}
         >
           (310) 863-9920
         </a>
@@ -146,7 +146,7 @@ const ContactSection = () => {
         </div>
         <div
           style={{
-            flex: "1 1 100%", // Button takes full width
+            flex: "1 1 100%", 
             textAlign: "center",
           }}
         >
@@ -161,7 +161,7 @@ const ContactSection = () => {
               cursor: "pointer",
               fontSize: "1rem",
               transition: "background-color 0.3s ease",
-              backgroundColor: hover ? 'darkgrey' : 'grey',
+              backgroundColor: hover ? '#66c' : '#99f',
             }}
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
