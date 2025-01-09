@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { FaGithub } from 'react-icons/fa';
 
-import image1 from "../../Images/Headshot.png";
-import image2 from "../../Images/football1.png";
-import image3 from "../../Images/IMG_1444.jpg";
-import image4 from "../../Images/Solar System.png";
-import image5 from "../../Images/IMG_1326.jpg";
-import image6 from "../../Images/Aboutphoto2.png";
-import image7 from "../../Images/Aboutphoto2.png";
+import image1 from "../../Images/soa.png";
+import image2 from "../../Images/message.png";
+import image3 from "../../Images/horiz:hist.png";
+import image4 from "../../Images/Solar-System.png";
+import image5 from "../../Images/memmap.png";
+import image6 from "../../Images/crud.png";
+import image7 from "../../Images/nn.svg";
 
 const ProjectSection = () => {
   const [hoveredId, setHoveredId] = useState(null);

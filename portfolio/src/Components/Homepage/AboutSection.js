@@ -4,7 +4,7 @@ import Photo2 from '../../Images/football1.png';
 import { FaInstagram, FaLinkedinIn, FaGithub } from 'react-icons/fa';
 
 const AboutSection = () => {
-  const [sliderValue, setSliderValue] = useState(75);
+  const [sliderValue, setSliderValue] = useState(65);
   const [activeTab, setActiveTab] = useState('Education');
   const [hover1, setHover1] = useState(false);
   const [hover2, setHover2] = useState(false);
@@ -34,13 +34,16 @@ const AboutSection = () => {
         flexDirection: 'row',
         flexWrap: 'wrap',
         width: '100%',
+        // height:'60vh',
+        paddingTop: '5rem',
+        paddingBottom: '3rem',
+        backgroundColor:'black'
       }}
     >
       {/* Left side of the about me section */}
       <div
         style={{
-          paddingTop:'7rem',
-          paddingBottom:'5rem',
+          paddingTop:'4rem',
           flex: '1 1 40%',
           backgroundColor: 'black',
           display: 'flex',
@@ -215,8 +218,7 @@ const AboutSection = () => {
           }}
         >
           I'm Joseph Rhodes, a senior at Case Western Reserve University
-          majoring in Computer Science and Finance with minors in Banking and
-          Finance, Business Management, and Mathematics. I have a strong
+          majoring in Computer Science and Finance with minors in Business Management, and Mathematics. I have a strong
           passion for technology and business and enjoy developing software solutions that
           can solve real-world problems.
         </p>
