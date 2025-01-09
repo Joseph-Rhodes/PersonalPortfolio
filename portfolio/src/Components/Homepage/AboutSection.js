@@ -6,9 +6,9 @@ import { FaInstagram, FaLinkedinIn, FaGithub } from 'react-icons/fa';
 const AboutSection = () => {
   const [sliderValue, setSliderValue] = useState(75);
   const [activeTab, setActiveTab] = useState('Education');
-  const [hover1, setHover1] = useState(false)
-  const [hover2, setHover2] = useState(false)
-  const [hover3, setHover3] = useState(false)
+  const [hover1, setHover1] = useState(false);
+  const [hover2, setHover2] = useState(false);
+  const [hover3, setHover3] = useState(false);
 
   const handleMouseDown = (e) => {
     const sliderRect = e.target.parentElement.getBoundingClientRect();
@@ -28,11 +28,19 @@ const AboutSection = () => {
   };
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'row', width: '100%' }}>
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        width: '100%',
+      }}
+    >
       {/* Left side of the about me section */}
       <div
         style={{
-          flex: '0 0 40%',
+          paddingTop:'5rem',
+          flex: '1 1 40%',
           backgroundColor: 'black',
           display: 'flex',
           flexDirection: 'column',
@@ -122,7 +130,7 @@ const AboutSection = () => {
               borderRadius: '50%',
               textDecoration: 'none',
               color: 'white',
-              transition: "background-color 0.3s ease",
+              transition: 'background-color 0.3s ease',
               backgroundColor: hover1 ? '#99f' : '#66c',
             }}
             onMouseEnter={() => setHover1(true)}
@@ -143,7 +151,7 @@ const AboutSection = () => {
               borderRadius: '50%',
               textDecoration: 'none',
               color: 'white',
-              transition: "background-color 0.3s ease",
+              transition: 'background-color 0.3s ease',
               backgroundColor: hover2 ? '#99f' : '#66c',
             }}
             onMouseEnter={() => setHover2(true)}
@@ -164,7 +172,7 @@ const AboutSection = () => {
               borderRadius: '50%',
               textDecoration: 'none',
               color: 'white',
-              transition: "background-color 0.3s ease",
+              transition: 'background-color 0.3s ease',
               backgroundColor: hover3 ? '#99f' : '#66c',
             }}
             onMouseEnter={() => setHover3(true)}
@@ -178,7 +186,8 @@ const AboutSection = () => {
       {/* Right side of the about me section */}
       <div
         style={{
-          flex: '0 0 60%',
+          paddingTop:'5rem',
+          flex: '1 1 60%',
           backgroundColor: 'black',
           color: 'white',
           padding: '40px',
@@ -280,19 +289,16 @@ const AboutSection = () => {
           {activeTab === 'Related Coursework' && (
             <ul>
               <li>
-                <span style={{ color: '#99f', fontWeight: 'bold' }}>Computer Science:</span> Algorithms and Data
-                Structure, Software Engineering and Design, Artificial
-                Intelligence, Operating Systems, Discrete Mathematics, Data
-                Science
+                <span style={{ color: '#99f', fontWeight: 'bold' }}>Computer Science: </span> 
+                 Data Structures, Algorithms, Operating Systems, Software Engineering, Artificial Intelligence, Full Stack Web Development, Computer Security, Database Systems, Logic Design, Programming Language Concepts, App Development for iOS
               </li>
               <li>
-                <span style={{ color: '#99f', fontWeight: 'bold' }}>Mathematics:</span> Multivariable Calculus, Vector
-                Calculus, Linear Algebra, Statistics and Probability, Numerical
-                Analysis
+                <span style={{ color: '#99f', fontWeight: 'bold' }}>Mathematics: </span>
+                Multivariable Calculus, Vector Calculus, Linear Algebra, Statistics, Elementary Differential Equations, Discrete Mathematics, Intro to Scientific Computing
               </li>
               <li>
-                <span style={{ color: '#99f', fontWeight: 'bold' }}>Business:</span> Accounting I, Microeconomics I,
-                Corporate Finance, Marketing, Business Management
+                <span style={{ color: '#99f', fontWeight: 'bold' }}>Business: </span>
+                Accounting, Business Management, Micro/Macro Economics, Marketing, Fintech, Corporate Finance, Investments, Financial Modeling, Cases, Empirical Analysis
               </li>
             </ul>
           )}
@@ -305,7 +311,7 @@ const AboutSection = () => {
                 <span style={{ color: '#99f', fontWeight: 'bold' }}>Technology:</span> AWS, Google Applications, MS Excel, MS PowerPoint, MS OneDrive, MS Teams, Tableau.
               </li>
               <li>
-                <span style={{ color: '#99f', fontWeight: 'bold' }}>Other Activities:</span> Actor, Marathon Runner, Soccer, Saxophone, Personal Fitness, Photography, Pickleball, Golf.
+                <span style={{ color: '#99f', fontWeight: 'bold' }}>Other Activities:</span> Actor, Dance, Marathon Runner, Soccer, Saxophone, Personal Fitness, Photography, Pickleball, Golf.
               </li>
             </ul>
           )}

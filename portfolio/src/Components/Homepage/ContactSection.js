@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import Resume from "../../Files/Joseph Rhodes Resume.pdf"
 
 const ContactSection = () => {
 
@@ -61,6 +62,17 @@ const ContactSection = () => {
           style={{ color: "#99f", textDecoration: "none" }}
         >
           (310) 863-9920
+        </a>
+      </p>
+      <p style={{ textAlign: "center", fontSize: "1rem", marginBottom: "1rem", color:'white', fontFamily:"monspace" }}>
+        <span style={{ fontWeight: "bold" }}>Resume:</span>{" "}
+        <a
+          href={Resume}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: "#99f", textDecoration: "none" }}
+        >
+          Click Here
         </a>
       </p>
 
