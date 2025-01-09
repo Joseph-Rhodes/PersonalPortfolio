@@ -82,9 +82,9 @@ const IntroSection = () => {
           }}
         >
           <em>
-            <span style={{ fontWeight: 'bold' }}>Computer Science and Finance</span> with Mathematics and Business Management
-            <br />
-            - Undergraduate 2025 -
+            {/* <span style={{ fontWeight: 'bold' }}>Computer Science and Finance</span> with Mathematics and Business Management
+            <br /> */}
+            - 2025 Graduate -
             <br />
             - Case Western Reserve University -
           </em>

@@ -33,6 +33,7 @@ const ContactSection = () => {
         backgroundColor: 'black',
         padding: '2rem',
         color: "#333",
+        paddingTop:'5rem'
       }}
     >
       <h1

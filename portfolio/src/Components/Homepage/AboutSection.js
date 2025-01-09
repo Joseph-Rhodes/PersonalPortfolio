@@ -39,7 +39,8 @@ const AboutSection = () => {
       {/* Left side of the about me section */}
       <div
         style={{
-          paddingTop:'5rem',
+          paddingTop:'7rem',
+          paddingBottom:'5rem',
           flex: '1 1 40%',
           backgroundColor: 'black',
           display: 'flex',
@@ -186,7 +187,8 @@ const AboutSection = () => {
       {/* Right side of the about me section */}
       <div
         style={{
-          paddingTop:'5rem',
+          paddingTop:'7rem',
+          paddingBottom:'5rem',
           flex: '1 1 60%',
           backgroundColor: 'black',
           color: 'white',
@@ -212,10 +214,10 @@ const AboutSection = () => {
             marginBottom: '30px',
           }}
         >
-          I'm Joseph Rhodes, a rising senior at Case Western Reserve University
+          I'm Joseph Rhodes, a senior at Case Western Reserve University
           majoring in Computer Science and Finance with minors in Banking and
           Finance, Business Management, and Mathematics. I have a strong
-          passion for technology and enjoy developing software solutions that
+          passion for technology and business and enjoy developing software solutions that
           can solve real-world problems.
         </p>
 
