@@ -15,11 +15,11 @@ function App() {
       <div id="about">
         <AboutSection />
       </div>
-      <div id="projects">
-        <ProjectSection />
-      </div>
       <div id="passions">
         <Passions />
+      </div>
+      <div id="projects">
+        <ProjectSection />
       </div>
       <div id="contact">
         <ContactSection />
