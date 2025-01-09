@@ -106,10 +106,11 @@ const ProjectSection = () => {
 
       <style jsx>{`
         .portfolio-container {
+          background-color: black;
           text-align: center;
           padding: 3rem 1rem;
           font-family: Arial, sans-serif;
-          max-width: 1400px;
+          color: white;
           margin: 0 auto;
         }
 
@@ -120,7 +121,7 @@ const ProjectSection = () => {
 
         .portfolio-subtitle {
           font-size: 1.2rem;
-          color: #555;
+          color: white;
           margin-bottom: 2.5rem;
         }
 
@@ -129,6 +130,8 @@ const ProjectSection = () => {
           grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
           gap: 1.5rem;
           margin-bottom: 2rem;
+          max-width: 1400px;
+          margin: 0 auto;
         }
 
         .project-link {
