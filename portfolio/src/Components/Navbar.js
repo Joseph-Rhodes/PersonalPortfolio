@@ -16,7 +16,7 @@ const Navbar = () => {
         justifyContent: "space-between",
         alignItems: "center",
         padding: "1rem 2rem",
-        backgroundColor: "black",
+        backgroundColor: "rgba(0, 0, 0, 0.5)",
         color: "white",
         top: 0,
         zIndex: 1000,
