@@ -1,9 +1,8 @@
-import React, {useState} from "react";
-import Resume from "../../Files/Joseph Rhodes Resume.pdf"
+import React, { useState } from "react";
+import Resume from "../../Files/Joseph Rhodes Resume.pdf";
 
 const ContactSection = () => {
-
-  const [hover, setHover] = useState(false)
+  const [hover, setHover] = useState(false);
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -30,10 +29,10 @@ const ContactSection = () => {
   return (
     <div
       style={{
-        backgroundColor: 'black',
-        padding: '2rem',
-        color: "#333",
-        paddingTop:'5rem'
+        backgroundColor: "black",
+        padding: "2rem",
+        paddingTop: "5rem",
+        color: "white",
       }}
     >
       <h1
@@ -41,14 +40,13 @@ const ContactSection = () => {
           fontWeight: "bold",
           textAlign: "center",
           marginBottom: "1rem",
-          color:"white",
-          fontFamily:"Courier New"
+          fontFamily: "Comic Sans",
         }}
       >
         Contact Me
       </h1>
-      <p style={{ textAlign: "center", fontSize: "1rem", color:'white', fontFamily:'monospace' }}>
-        <span style={{ fontWeight: "bold"}}>Email:</span>{" "}
+      <p style={{ textAlign: "center", fontSize: "1rem", fontFamily: "Monospace" }}>
+        <span style={{ fontWeight: "bold" }}>Email:</span>{" "}
         <a
           href="mailto:joerhodesv2025@gmail.com"
           style={{ color: "#99f", textDecoration: "none" }}
@@ -56,7 +54,14 @@ const ContactSection = () => {
           joerhodesv2025@gmail.com
         </a>
       </p>
-      <p style={{ textAlign: "center", fontSize: "1rem", marginBottom: "1rem", color:'white', fontFamily:"monspace" }}>
+      <p
+        style={{
+          textAlign: "center",
+          fontSize: "1rem",
+          marginBottom: "1rem",
+          fontFamily: "Monospace",
+        }}
+      >
         <span style={{ fontWeight: "bold" }}>Phone:</span>{" "}
         <a
           href="tel:(310)863-9920"
@@ -65,7 +70,14 @@ const ContactSection = () => {
           (310) 863-9920
         </a>
       </p>
-      <p style={{ textAlign: "center", fontSize: "1rem", marginBottom: "1rem", color:'white', fontFamily:"monspace" }}>
+      <p
+        style={{
+          textAlign: "center",
+          fontSize: "1rem",
+          marginBottom: "1rem",
+          fontFamily: "Monospace",
+        }}
+      >
         <span style={{ fontWeight: "bold" }}>Resume:</span>{" "}
         <a
           href={Resume}
@@ -87,11 +99,12 @@ const ContactSection = () => {
           display: "flex",
           flexWrap: "wrap",
           gap: "1.5rem",
+          fontFamily: "Monospace",
         }}
       >
         <div
           style={{
-            flex: "1 1 45%", 
+            flex: "1 1 45%",
             display: "flex",
             flexDirection: "column",
             gap: "1rem",
@@ -139,7 +152,7 @@ const ContactSection = () => {
         </div>
         <div
           style={{
-            flex: "1 1 50%", // Right column width
+            flex: "1 1 50%",
           }}
         >
           <textarea
@@ -159,7 +172,7 @@ const ContactSection = () => {
         </div>
         <div
           style={{
-            flex: "1 1 100%", 
+            flex: "1 1 100%",
             textAlign: "center",
           }}
         >
@@ -174,7 +187,7 @@ const ContactSection = () => {
               cursor: "pointer",
               fontSize: "1rem",
               transition: "background-color 0.3s ease",
-              backgroundColor: hover ? '#66c' : '#99f',
+              backgroundColor: hover ? "#66c" : "#99f",
             }}
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}

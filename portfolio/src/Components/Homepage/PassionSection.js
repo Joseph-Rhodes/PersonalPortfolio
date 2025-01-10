@@ -22,8 +22,8 @@ const PassionSection = () => {
     alignItems: "center",
     backgroundColor: "rgba(0, 0, 0, 0.7)", // Semi-transparent black for blending
     color: "white",
-    fontFamily: "Courier New",
-    fontSize: "18px",
+    fontFamily: "Monospace", // Updated to match the previous sections
+    fontSize: "16px",
     textAlign: "center",
     transition: "all 0.3s ease",
     cursor: "pointer",
@@ -54,11 +54,11 @@ const PassionSection = () => {
           left: 0,
           width: "100%",
           height: "100%",
-          backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(${BackgroundImage})`,
+          backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(${BackgroundImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
-          filter: "grayscale(75%)", // Apply grayscale only to the background image
+          filter: "grayscale(80%)", // Apply grayscale only to the background image
           zIndex: -1, // Send background to the back
         }}
       />
@@ -70,7 +70,7 @@ const PassionSection = () => {
             fontWeight: "bold",
             marginBottom: "1rem",
             color: "white",
-            fontFamily: "Courier New",
+            fontFamily: "Comic Sans", // Updated to match the heading font from previous sections
           }}
         >
           Activities
@@ -84,7 +84,7 @@ const PassionSection = () => {
             }
             onMouseLeave={(e) =>
               Object.assign(e.currentTarget.style, {
-                backgroundColor: "rgba(0, 0, 0, 0.5)",
+                backgroundColor: "rgba(0, 0, 0, 0.7)",
                 color: "white",
               })
             }
@@ -96,7 +96,7 @@ const PassionSection = () => {
               href="https://athletics.case.edu/sports/football/roster/joseph-rhodes-v/8851"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ color: "white", textDecoration: "none" }}
+              style={{ color: "white", textDecoration: "none", fontWeight: "bold" }}
             >
               Learn more
             </a>
@@ -110,7 +110,7 @@ const PassionSection = () => {
             }
             onMouseLeave={(e) =>
               Object.assign(e.currentTarget.style, {
-                backgroundColor: "rgba(0, 0, 0, 0.5)",
+                backgroundColor: "rgba(0, 0, 0, 0.7)",
                 color: "white",
               })
             }
@@ -122,7 +122,7 @@ const PassionSection = () => {
               href="https://josephrhodes.mypixieset.com/portfolio/"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ color: "white", textDecoration: "none" }}
+              style={{ color: "white", textDecoration: "none", fontWeight: "bold" }}
             >
               Learn more
             </a>
@@ -136,7 +136,7 @@ const PassionSection = () => {
             }
             onMouseLeave={(e) =>
               Object.assign(e.currentTarget.style, {
-                backgroundColor: "rgba(0, 0, 0, 0.5)",
+                backgroundColor: "rgba(0, 0, 0, 0.7)",
                 color: "white",
               })
             }
@@ -150,7 +150,7 @@ const PassionSection = () => {
               href="https://josephrhodes.mypixieset.com/portfolio/"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ color: "white", textDecoration: "none" }}
+              style={{ color: "white", textDecoration: "none", fontWeight: "bold" }}
             >
               Learn more
             </a>

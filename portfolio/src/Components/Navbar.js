@@ -1,5 +1,5 @@
 import React from "react";
-import Resume from "../Files/Joseph Rhodes Resume.pdf"
+import Resume from "../Files/Joseph Rhodes Resume.pdf";
 
 const Navbar = () => {
   const scrollToSection = (id) => {
@@ -16,10 +16,13 @@ const Navbar = () => {
         justifyContent: "space-between",
         alignItems: "center",
         padding: "1rem 2rem",
-        backgroundColor: "rgba(0, 0, 0, 0.5)",
+        backgroundColor: "rgba(0, 0, 0, 0.75)",
         color: "white",
+        width: "100%",
         top: 0,
         zIndex: 1000,
+        boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
+        position: "static",
       }}
     >
       {/* Logo */}
@@ -27,45 +30,39 @@ const Navbar = () => {
         style={{
           fontWeight: "bold",
           fontSize: "1.5rem",
-          fontFamily: "Cursive",
+          fontFamily: "Snell Roundhand, cursive",
           cursor: "pointer",
-
         }}
         onClick={() => scrollToSection("intro")}
       >
-        JRV
+        JR5
       </div>
 
       {/* Navigation Links */}
-      <div style={{ display: "flex", gap: "1.5rem", alignItems: "center" }}>
-        <p
-          style={{ cursor: "pointer", fontSize: "1.25rem", fontFamily:'C', paddingTop:'0.75rem' }}
-          onClick={() => scrollToSection("about")}
-        >
-          About
-        </p>
-        <p
-          style={{ cursor: "pointer", fontSize: "1.25rem", fontFamily:'C', paddingTop:'0.75rem' }}
-          onClick={() => scrollToSection("passions")}
-        >
-          Activities
-        </p>
-        <p
-          style={{ cursor: "pointer", fontSize: "1.25rem", fontFamily:'C', paddingTop:'0.75rem' }}
-          onClick={() => scrollToSection("projects")}
-        >
-          Projects
-        </p>
-        <p
-          style={{ cursor: "pointer", fontSize: "1.25rem", fontFamily:'C',paddingTop:'0.75rem' }}
-          onClick={() => scrollToSection("contact")}
-        >
-          Contact
-        </p>
+      <div style={{ display: "flex", gap: "2rem", alignItems: "center" }}>
+        {["About", "Projects", "Activities", "Contact"].map((link) => (
+          <p
+            key={link}
+            style={{
+              cursor: "pointer",
+              fontSize: "1rem",
+              fontFamily: "'Monospace', sans-serif",
+              textTransform: "uppercase",
+              margin: 0,
+              padding: 0,
+              transition: "color 0.3s ease",
+            }}
+            onClick={() => scrollToSection(link.toLowerCase())}
+            onMouseEnter={(e) => (e.target.style.color = "#99f")}
+            onMouseLeave={(e) => (e.target.style.color = "white")}
+          >
+            {link}
+          </p>
+        ))}
 
         {/* Resume Button */}
         <a
-          href={Resume} // Replace with the actual path to your resume file
+          href={Resume}
           target="_blank"
           rel="noopener noreferrer"
           style={{
@@ -75,7 +72,9 @@ const Navbar = () => {
             borderRadius: "5px",
             backgroundColor: "#99f",
             fontWeight: "bold",
-            fontFamily:"C",
+            fontFamily: "'Monospace', sans-serif",
+            textTransform: "uppercase",
+            margin: 0,
             transition: "background-color 0.3s ease",
           }}
           onMouseEnter={(e) => (e.target.style.backgroundColor = "#66c")}
