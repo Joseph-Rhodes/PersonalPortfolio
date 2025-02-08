@@ -144,7 +144,7 @@ const PassionSection = () => {
             <FaGolfBall size={50} />
             <h2 style={{ fontWeight: "bold", paddingTop: "0.5rem" }}>Golfing</h2>
             <p>
-              Golf <br /> (Updating soon)
+              Golf <br /> (Coming soon)
             </p>
             <a
               href="/#"
