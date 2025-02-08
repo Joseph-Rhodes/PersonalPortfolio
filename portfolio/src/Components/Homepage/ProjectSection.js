@@ -25,7 +25,7 @@ const ProjectSection = () => {
       id: 2,
       title: "Healthcare Messaging System",
       description:
-        "This project involves building a Python-based messaging system for healthcare professionals, including a server (myserver.py) to handle client connections and a client (myclient.py) for communication. It implements a custom protocol to support features like user registration, message broadcasting, and private messaging.",
+        "This project involves building a Python-based messaging system for healthcare professionals, including a server (myserver.py) to handle client connections and a client (myclient.py) for communication. It implements a custom protocol to support features like user registration, messaging, and private messaging.",
       image: image2,
       githubLink:
         "https://github.com/Joseph-Rhodes/More-Robust-Messaging-System-for-Healthcare-Professionals",
@@ -34,7 +34,7 @@ const ProjectSection = () => {
       id: 3,
       title: "Image Histogram and Segmentation / Horizon Detection",
       description:
-        "This project showcases advanced image processing techniques, implemented in C++ using the OpenCV library. It features tools for creating image histograms, performing segmentation, and detecting horizons, offering a robust approach to analyzing and interpreting visual data.",
+        "This project showcases advanced image processing techniques, implemented in C++ using the OpenCV library. It features tools for creating image histograms, performing segmentation, and detecting horizons, offering an approach to analyzing and interpreting visual data.",
       image: image3,
       githubLink:
         "https://github.com/Joseph-Rhodes/Image-Histogram-and-Segmentation-and-Horizon-Detection",
@@ -43,7 +43,7 @@ const ProjectSection = () => {
       id: 4,
       title: "Solar System Visualization",
       description:
-        "This project simulates a simple solar system with a sun, planet, and moon using Three.js for 3D rendering in a web browser. The project involves creating geometrical and material components, animating celestial movements, and implementing optional enhancements like texturing, rotations, and background effects.",
+        "This project simulates a simple solar system with a sun, planet, and moon using Three.js for 3D rendering in a web browser. The project involves creating geometrical and material components, animating celestial movements, and implementing enhancements like texturing, rotations, and background effects.",
       image: image4,
       githubLink:
         "https://github.com/Joseph-Rhodes/visual-computing-sun-planet-and-moon/tree/main",
