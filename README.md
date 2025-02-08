@@ -1,1 +1,1 @@
-# Personal Pprtfolio https://joseph-personal-portfolio.vercel.app/
+# Personal Portfolio https://joseph-personal-portfolio.vercel.app/
