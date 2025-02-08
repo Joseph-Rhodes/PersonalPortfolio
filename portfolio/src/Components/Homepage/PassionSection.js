@@ -147,9 +147,7 @@ const PassionSection = () => {
               Golf <br /> (Updating soon)
             </p>
             <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/#"
               style={{ color: "white", textDecoration: "none", fontWeight: "bold" }}
             >
               Learn more
