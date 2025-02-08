@@ -119,7 +119,7 @@ const PassionSection = () => {
             <h2 style={{ fontWeight: "bold", paddingTop: "0.5rem" }}>Travel</h2>
             <p>Travel Photography Collection</p>
             <a
-              href="https://josephrhodes.mypixieset.com/portfolio/"
+              href="https://jr5travel.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               style={{ color: "white", textDecoration: "none", fontWeight: "bold" }}
@@ -147,7 +147,7 @@ const PassionSection = () => {
               Golf <br /> (Updating soon)
             </p>
             <a
-              href="https://josephrhodes.mypixieset.com/portfolio/"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               style={{ color: "white", textDecoration: "none", fontWeight: "bold" }}
