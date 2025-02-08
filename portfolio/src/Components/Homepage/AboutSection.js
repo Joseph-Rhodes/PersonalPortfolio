@@ -269,13 +269,13 @@ const AboutSection = () => {
           {activeTab === 'Skills' && (
             <ul>
               <li>
-                <span style={{ color: '#99f', fontWeight: 'bold' }}>Programming Languages:</span> Java, Python, React.js, SQL, THREE.js, CSS, HTML.
+                <span style={{ color: '#99f', fontWeight: 'bold' }}>Programming Languages & Libraries:</span> Java, Python, JavaScript, React.js, THREE.js, Node.js, SQL, HTML, CSS.
               </li>
               <li>
-                <span style={{ color: '#99f', fontWeight: 'bold' }}>Technology:</span> AWS, Google Applications, MS Excel, MS PowerPoint, MS OneDrive, MS Teams, Tableau.
+                <span style={{ color: '#99f', fontWeight: 'bold' }}>Technology:</span> AWS, Microsoft Office Suite, MongoDB, PostgreSQL, Power BI.
               </li>
               <li>
-                <span style={{ color: '#99f', fontWeight: 'bold' }}>Other Activities:</span> Actor, Dance, Marathon Runner, Soccer, Saxophone, Personal Fitness, Photography, Pickleball, Golf.
+                <span style={{ color: '#99f', fontWeight: 'bold' }}>Other Activities:</span> Actor, Dance, Runner, Soccer, Saxophone, Personal Fitness, Photography, Pickleball, Golf. 
               </li>
             </ul>
           )}

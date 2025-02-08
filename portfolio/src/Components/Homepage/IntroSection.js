@@ -83,7 +83,7 @@ const IntroSection = () => {
           }}
         >
           <em>
-            - 2025 Graduate -
+            - May 2025 Graduate -
             <br />
             - Case Western Reserve University -
           </em>
